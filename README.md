@@ -1,7 +1,9 @@
 # social-media-project
 A social media aaplication
 📣 Exciting News! 🎉
-
+![Social Media Image](https://github.com/Dinesh-Kuniyal/social-media-project/blob/main/assests/Screenshot%20(328).png?raw=true)
+![Social Media Image](https://github.com/Dinesh-Kuniyal/social-media-project/blob/main/assests/Screenshot%20(329).png?raw=true)
+![Sample Image](https://github.com/Dinesh-Kuniyal/social-media-project/blob/main/assests/Screenshot%20(330).png?raw=true)
 Introducing my latest social media project! 🚀🌟
 
 🌐 Visit: https://theopiverse.com/opiverse/
