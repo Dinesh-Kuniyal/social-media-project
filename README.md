@@ -1,9 +1,6 @@
 # social-media-project
 A social media aaplication
 📣 Exciting News! 🎉
-![Screenshot (328)](./assets/76137603/537fb6d4-6c09-47b2-a7c8-c51fa785dd15)
-![Screenshot (329)](https://github.com/Dinesh-Kuniyal/social-media-project/assets/76137603/2a2d10ee-23a8-4043-9744-8a632e7c0c12)
-![Screenshot (330)](./assets/76137603/3524d230-0f99-489d-911d-49c2f0aa6309)
 
 Introducing my latest social media project! 🚀🌟
 
