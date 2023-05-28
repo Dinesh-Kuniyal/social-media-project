@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: monsterrat;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+@font-face {
+    font-family: monsterrat;
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: balsamiq-sans;
+    src: url(../fonts/BalsamiqSans-Regular.ttf);
+}
+@font-face {
+    font-family: comfortaa;
+    src: url(../fonts/Comfortaa-VariableFont_wght.ttf);
+}
+html {
+    scroll-behavior: smooth;
+}
+:root{
+    --base-purple: rgb(103, 78, 240);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.object-images-cover-center{
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center;
+    -o-object-position: center;
+}
+img{
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center;
+    -o-object-position: center;
+}
