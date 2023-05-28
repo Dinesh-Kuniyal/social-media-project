@@ -1,0 +1,191 @@
+*{
+  transition: all 200ms ease-in-out;
+}
+body {
+  background-color: #dadada;
+}
+html {
+  height: -webkit-fill-available;
+}
+body {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  /* height: 100vh; */
+  height: -webkit-fill-available;
+}
+.header-container {
+  background-color: #fff;
+  width: 100%;
+  min-height: 50px;
+  max-height: 50px;
+}
+.main-app-container {
+  flex: 1;
+  /* background-color: rgb(232, 240, 254); */
+  background-color: #d1d1d1;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.main-app-container::-webkit-scrollbar {
+  display: none;
+}
+.footer-container {
+  width: 100%;
+  background-color: #fff;
+}
+
+.explore-page-header {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.explore-page-header input {
+  width: 100%;
+  max-width: 700px;
+  min-width: 300px;
+  height: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+}
+.explore-page-header input:focus {
+  outline: none;
+}
+.sub-menu {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+.list-items {
+  padding: 5px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+.list-items:nth-child(1) {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+}
+/* .active-list-items{
+    border-bottom: 2px solid rgba(0,0,0,.8);
+} */
+.main-app-container-sub {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.article-list-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.article-list-container:first-child {
+  margin-top: 0px;
+}
+.article-list-container:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.article-list-container:hover .article-heading {
+  color: #fff;
+  font-weight: 400;
+}
+.article-list-container img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.article-heading {
+  font-size: 18px;
+}
+.article-topic-and-club-name {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+}
+.article-date {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.flexed-club-container {
+  width: clamp(280px, auto, 400px);
+  height: auto;
+  background-color: #fff;
+  display: block;
+  margin-left: auto;
+  display: flex;
+  margin-right: auto;
+  border-radius: 4px;
+  align-items: center;
+  margin-top: 10px;
+  cursor: pointer;
+  padding: 10px;
+  gap: 10px;
+}
+.flexed-club-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.flexed-club-container:hover {
+  background-color: #333;
+}
+.flexed-club-container:hover h3 {
+  color: #fff;
+  font-weight: 400;
+}
+.flexed-club-container:hover .articles-count {
+  color: #ccc;
+}
+.topic-list-container {
+  width: auto;
+  height: auto;
+  background-color: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 10px;
+}
+.topic-list-container:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.topic-list-container:hover h4 {
+  font-weight: 400;
+  color: #fff;
+}
+.topic-list-container:hover .topic-club-name {
+  color: #ccc;
+}
+.topic-list-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+.topic-club-name {
+  font-size: 13px;
+  display: block;
+  margin-top: -5px;
+  color: rgba(0, 0, 0, 0.6);
+}

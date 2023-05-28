@@ -1,0 +1,31 @@
+html {
+    height: -webkit-fill-available;
+  }
+  body {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    /* height: 100vh; */
+    height: -webkit-fill-available;
+  }
+  .header-container {
+    background-color: #fff;
+    width: 100%;
+    min-height: 50px;
+    max-height: 50px;
+  }
+  .main-app-container {
+    flex: 1;
+    /* background-color: rgb(232, 240, 254); */
+    background-color: #d1d1d1;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  .main-app-container::-webkit-scrollbar {
+    display: none;
+  }
+  .footer-container {
+    width: 100%;
+    background-color: #fff;
+  }
+  

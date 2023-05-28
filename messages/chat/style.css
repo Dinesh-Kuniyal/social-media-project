@@ -1,0 +1,444 @@
+*,
+*::before,
+*::after {
+    color: #333;
+}
+
+body {
+    background-color: #dadada70;
+}
+
+.main-app-container-chats {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+}
+
+.chat-banner-container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.user-image-banner {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #333;
+}
+
+.user-details-chat-banner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    font-size: 12px;
+}
+
+.user-details-chat-banner .user-name-banner {
+    font-size: 14px;
+    color: #300;
+}
+
+.user-status-online-offline {
+    color: rgba(0, 0, 0, .6);
+    font-size: 10px;
+}
+
+.chat-banner-icon-container {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.more_horiz_chat_banner {
+    width: 20px;
+    cursor: pointer;
+    /* fill: #300; */
+}
+
+.rest-area-after-banner {
+    flex-grow: 1;
+    display: flex;
+}
+
+.main-chat-area-container {
+    flex-grow: 1;
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-flow: column;
+    padding-right: 300px;
+}
+
+.chats-container-list {
+    flex-grow: 1;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+    overflow: hidden;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.chats-background-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: .5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: url(../../images/russiaVSukraine.jpg); */
+    background-attachment: fixed;
+}
+
+.chats-container-list::-webkit-scrollbar {
+    width: 4px;
+    display: none;
+    background-color: transparent;
+}
+
+.chats-container-list::-webkit-scrollbar-thumb {
+    width: 4px;
+    background-color: rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.message-detail-container {
+    max-width: 300px;
+    border-radius: 10px;
+    display: flex;
+    font-size: 13px;
+}
+
+.incoming-message-container {
+    border-top-left-radius: 0px;
+    background-color: #fff;
+    margin-right: auto;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.outgoing-message-container {
+    margin-left: auto;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    /* background-color: rgba(0,0,0,.2); */
+    color: #fff;
+    background-color: rgba(51, 0, 0, 0.822);
+    border-top-right-radius: 0px;
+}
+
+.incomming-message-time {
+    color: rgba(0, 0, 0, .6);
+    font-size: 10px;
+    display: block;
+}
+
+.outgoing-message-time {
+    color: rgba(0, 0, 0, .6);
+    font-size: 10px;
+    display: block;
+    margin-left: auto;
+}
+
+.chat-form-typing-area {
+    width: 100%;
+    height: 50px;
+    min-height: 50px;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    background-color: #fff;
+    padding: 0px 10px;
+    gap: 10px;
+}
+
+.user-message {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.user-message:focus {
+    outline: none;
+}
+
+.attachment-icon-form {
+    stroke: #333;
+    cursor: pointer;
+    width: 20px;
+}
+
+.emoji-icon-form {
+    stroke: #333;
+}
+
+.form-submit-btn {
+    /* width: 40px; */
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    /* height: 40px; */
+}
+
+.form-submit-btn-icon {
+    width: 50px;
+    stroke: #333;
+    fill: #333;
+}
+
+.chats-info-container-right-side {
+    width: clamp(300px, 100%, 300px);
+    height: calc(100vh - 50px);
+    background-color: #fff;
+    border-left: 1px solid rgba(0, 0, 0, .2);
+    padding: 5px 10px;
+    display: flex;
+    flex-flow: column;
+    overflow-y: scroll;
+    transition: all 250ms ease-in-out;
+    margin-right: 0px;
+    position: fixed;
+    right: 0px;
+}
+
+.more_horiz_chat_banner {
+    display: none;
+}
+
+@media screen and (max-device-width: 1080px) {
+    .chats-info-container-right-side {
+        right: -300px;
+    }
+
+    .main-chat-area-container {
+        padding-right: 0px;
+    }
+
+    .more_horiz_chat_banner {
+        display: block;
+    }
+}
+
+.chats-info-container-right-side-open {
+    right: 0px;
+}
+
+.chats-info-container-right-side::-webkit-scrollbar {
+    display: none;
+}
+
+.chat-info-sidebar-list-heading {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #333;
+}
+
+.more_btn_side_heading_Chats {
+    display: block;
+    margin-left: auto;
+    width: 18px;
+    color: #300;
+    cursor: pointer;
+}
+
+.flexbox-for-shared-media {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+}
+.flexbox-for-shared-media img {
+    width: 130px;
+    aspect-ratio: 1/1;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .6);
+    border-radius: 4px;
+    /* filter: grayscale(100%); */
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+.flexbox-for-shared-media img:hover {
+    filter: grayscale(100%);
+}
+
+.chat-sidebar-shared-files {
+    flex-grow: 1;
+    /* overflow: hidden; */
+    list-style-type: none;
+    overflow-y: scroll;
+    /* margin-top: -5px; */
+}
+
+.chat-sidebar-shared-files::-webkit-scrollbar {
+    display: none;
+}
+
+.list-item-chat-shared-file {
+    display: flex;
+    align-items: center;
+}
+
+.file-icon-shred-files {
+    width: 35px;
+    min-width: 35px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, .2);
+    /* background: #000; */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shared-files-icons {
+    width: 18px;
+    /* fill: #333; */
+}
+
+.shared-files-details {
+    font-size: 12px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-flow: column;
+    padding: 10px;
+    flex-grow: 1;
+    overflow: hidden;
+    gap: 2px;
+}
+
+.File-name-shared-files {
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.shared-file-time-details {
+    font-size: 10px;
+}
+
+.shared-file-size {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+
+.BackBtnChatBanner {
+    display: none;
+}
+
+@media screen and (max-device-width: 700px) {
+    .BackBtnChatBanner {
+        display: block;
+    }
+}
+
+/* // File Upload  */
+.main-file-send-container{
+    width: clamp(280px, 100%, 400px);
+    background-color: var(--base-purple);
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: fixed;
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 5;
+    display: none;
+}
+.main-file-send-container h3{
+    color: #fff;
+    font-weight: 400;
+}
+.img-preview-before-send{
+    width: 100%;
+    aspect-ratio: 1/1;
+    /* height: 200px; */
+    border-radius: 4px;
+    margin: 5px 0px;
+    background-color: #fff;
+    display: none;
+    object-fit: contain;
+    -o-object-fit: contain;
+    object-position: center;
+    -o-object-position: center;
+}
+.main-file-send-container form button{
+    color: #333;
+    background-color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+    margin-left: auto;
+    gap: 5px;
+    transition: all 200ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+}
+.main-file-send-container form button:hover{
+    opacity: .7;
+}
+.send-icon-file{
+    width: 20px;
+}
+.file-ibfo-holder{
+    width: 100%;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    padding: 1rem;
+    display: none;
+}
+#file_name, #file_type{
+    display: none;
+}
+.send-file-form-loader{
+    width: 30px;
+    height: 30px;
+    border: 3px solid #fff;
+    margin: 4px 0px;
+    display: none;
+    margin-left: auto;
+    border-radius: 50%;
+    margin-right: auto;
+    border-top: 3px solid transparent;
+    animation: FormSendLoader 1s infinite ease-in-out;
+}
+@keyframes FormSendLoader { 
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}   
+}

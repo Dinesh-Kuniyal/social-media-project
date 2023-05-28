@@ -1,0 +1,16 @@
+@media screen and (max-device-width: 1080px){
+    .clubs-start-right-sidebar{
+        right: -300px;
+    }
+    .app-inner-container-for-sidebar-and-info{
+        padding-right: 0px;
+    }
+    .club-info-icon-banner{
+        display: block;
+    }
+}
+@media screen and (max-device-width: 700px){
+    .BackBtnClubBanner{
+        display: block;
+    }
+}
